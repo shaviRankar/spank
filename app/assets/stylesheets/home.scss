@@ -1,0 +1,47 @@
+#background-holder{
+  height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+#cloud-holder{
+  z-index: 1;
+  img {
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+  }
+}
+#homeContent {
+  color: white;
+  //height: 100vh;
+  margin: 0 auto;
+  padding: 15px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+
+  .newsBox {
+    background: rgba(0,0,0,.7);
+    left: 16%;
+    position: absolute;
+    width: 66%;
+
+    h2 {
+      font-family: 'Righteous';
+      font-size: 2em;
+      margin-bottom: 15px;
+      padding: 15px;
+    }
+
+    p {
+      font-family: 'Montserrat';
+      letter-spacing: 1.5px;
+      padding: 0px 15px 15px;
+    }
+    //background: rgba(170,170,170,.5);
+    border: 1px solid #eaeaea;
+    //opacity: 10%;
+  }
+}
