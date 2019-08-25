@@ -1,7 +1,31 @@
 #loadingOverlay {
   background-color: #000;
   height: 100vh;
+  -webkit-transition: opacity 1.0s ease-out;
+  transition: opacity 1.0s ease-out;
+  transition-delay: 2.0s;
+  opacity: 1;
+  position: absolute;
+  top: 0;
   width: 100%;
-  z-index: 100;'
+  z-index: 5;
+
+  #image-holder {
+    left: 25%;
+    max-width: 50%;
+    top: 25vh;
+    position: absolute;
+    img {
+      width: 100%;
+      position: absolute;
+    }
+    #circle{
+      //opacity: 0;
+      -webkit-transition: opacity 2.0s ease;
+      transition: opacity 2.0s ease;
+      transition-delay: 0.5s;
+    }
+  }
+
 
 }

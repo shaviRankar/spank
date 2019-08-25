@@ -1,3 +1,40 @@
 <div id="loadingOverlay">
- 
+  <div id="image-holder">
+    <%= image_tag 'logo/circle.png', id: 'circle' %>
+    <%= image_tag 'logo/spank.png', id: 'spank' %>
+  </div>
 </div>
+
+<script type="text/javascript">
+  let queue = new createjs.LoadQueue(false);
+  let holder = document.getElementById('image-holder');
+
+  let bar = new ProgressBar.Circle(holder, {
+    strokeWidth: 3,
+    easing: 'easeIn',
+    duration: 200,
+    color: '#faeaac',
+    svgStyle: null
+  });
+
+  queue.on("progress", event => {
+
+    bar.animate(event.progress);
+    if(event.progress == 1){
+      let circle = document.getElementById('circle');
+      let overlay = document.getElementById('loadingOverlay');
+
+      circle.style.opacity = 1;
+      overlay.style.opacity = 0;
+    }
+  });
+
+  queue.on("fileload", handleFileComplete);
+  queue.loadFile("/assets/logo/outerRing.png");
+  queue.loadFile("/assets/logo/circle.png");
+  queue.loadFile("/assets/logo/spank.png");
+
+  function handleFileComplete(){
+
+  }
+</script>
