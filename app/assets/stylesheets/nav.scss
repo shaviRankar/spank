@@ -1,0 +1,53 @@
+#nav-holder {
+  position: absolute;
+  top: 0;
+  z-index: 3;
+
+  .stripe1 {
+    background: #084d2a;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: -55px;
+    left: 100px;
+    transform-origin: top;
+    transform: rotate(45deg);
+    transition: height 1s ease;
+  }
+
+  .stripe2 {
+    background: #179253;
+    height: 50px;
+    width: 50px;
+    top: 190px;
+    left: -80px;
+    position: absolute;
+    transform-origin: top;
+    transform: rotate(225deg);
+    transition: height 1s ease;
+  }
+
+  .stripe3 {
+    background: #42de79;
+    height: 50px;
+    width: 50px;
+    top: -55px;
+    left: 235px;
+    position: absolute;
+    transform-origin: top;
+    transform: rotate(45deg);
+    transition: height 1s ease;
+  }
+
+  .stripe4 {
+    background: #084d2a;
+    height: 50px;
+    width: 50px;
+    top: 330px;
+    left: -80px;
+    position: absolute;
+    transform-origin: top;
+    transform: rotate(225deg);
+    transition: height 1s ease;
+  }
+}

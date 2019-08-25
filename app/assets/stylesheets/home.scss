@@ -1,20 +1,8 @@
-#background-holder{
-  height: 100vh;
-  position: relative;
-  width: 100%;
-}
-
-#cloud-holder{
-  z-index: 1;
-  img {
-    height: 100vh;
-    position: absolute;
-    width: 100%;
-  }
-}
 #homeContent {
   color: white;
-  //height: 100vh;
+
+  display: none;
+
   margin: 0 auto;
   padding: 15px;
   position: absolute;
