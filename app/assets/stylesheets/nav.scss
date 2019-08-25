@@ -12,7 +12,7 @@
     left: 100px;
     transform-origin: top;
     transform: rotate(45deg);
-    transition: height 1s ease;
+    transition: height 1s ease-out;
   }
 
   .stripe2 {
@@ -24,7 +24,7 @@
     position: absolute;
     transform-origin: top;
     transform: rotate(225deg);
-    transition: height 1s ease;
+    transition: height 1s ease-out;
   }
 
   .stripe3 {
@@ -36,7 +36,7 @@
     position: absolute;
     transform-origin: top;
     transform: rotate(45deg);
-    transition: height 1s ease;
+    transition: height 1s ease-out;
   }
 
   .stripe4 {
@@ -48,6 +48,6 @@
     position: absolute;
     transform-origin: top;
     transform: rotate(225deg);
-    transition: height 1s ease;
+    transition: height 1s ease-out;
   }
 }

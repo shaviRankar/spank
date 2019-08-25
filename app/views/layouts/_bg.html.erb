@@ -8,3 +8,23 @@
     <%= image_tag 'spaceClouds/cloud5', class: 'cloud', name: 'cloud6'  %>
   </div>
 </div>
+
+<script>
+  let bgHolder = document.getElementById('background-holder');
+  let stripe1 = document.querySelector(".stripe1");
+  let stripe2 = document.querySelector(".stripe2");
+  let stripe3 = document.querySelector(".stripe3");
+  let stripe4 = document.querySelector(".stripe4");
+
+  function setStripeHeights(){
+    stripe1.style.height = "400px";
+    stripe2.style.height = "400px";
+    stripe3.style.height = "500px";
+    stripe4.style.height = "600px";
+    bgHolder.removeEventListener('webkitTransitionEnd',setStripeHeights, false);
+  }
+  
+  bgHolder.addEventListener('webkitTransitionEnd', setStripeHeights, false);
+  bgHolder.addEventListener('transitioned', setStripeHeights, false);
+
+</script>

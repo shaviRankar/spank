@@ -2,6 +2,7 @@
   <div id="image-holder">
     <%= image_tag 'logo/circle.png', id: 'circle' %>
     <%= image_tag 'logo/spank.png', id: 'spank' %>
+    <h4>Loading...</h4>
   </div>
 </div>
 
@@ -26,6 +27,17 @@
 
       circle.style.opacity = 1;
       overlay.style.opacity = 0;
+
+    
+      overlay.addEventListener('webkitTransitionEnd', function(event){
+        bgHolder.style.opacity = "1";
+        overlay.style.display = "none";
+      },false);
+
+      overlay.addEventListener('webkitTransitionEnd', function(event){
+        bgHolder.style.opacity = "1";
+        overlay.style.display = "none";
+      },false);
     }
   });
 
